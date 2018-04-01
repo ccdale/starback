@@ -23,3 +23,5 @@ Starback system allows you to create roles for users, with just enough access ri
   * Assign users into groups
   * Assign roles to groups of users and/or individuals.
   * Cascading roles, where higher access levels automatically allow lower level roles to be requested.
+* Automatic application access management. So long as the user running the application has the required levels of
+  access then the application can be written to automatically manage it's own credentials.
