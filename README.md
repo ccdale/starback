@@ -38,3 +38,6 @@ Starback system allows you to create roles for users, with just enough access ri
 * (optionally) The Lambda asks the Federation Service (not shown in diagram) for a login url based on the access key
   supplied by the STS (purple).
 * The Lambda returns the access credentials (and the login url) back to the user (green).
+
+## Installation ##
+see [INSTALL](INSTALL.md) for full installation and AWS services setup.
