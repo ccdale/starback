@@ -5,6 +5,7 @@ Short-term, Role-based access credentials for AWS.
 > not as I wrote a similiar system for them.
 
 <a name='toc'></a>
+## Contents ##
 - [Features](#features)
 - [How it Works](#howitworks)
 - [Installation](#installation)
@@ -31,6 +32,7 @@ Starback system allows you to create roles for users, with just enough access ri
   * Cascading roles, where higher access levels automatically allow lower level roles to be requested.
 * Automatic application access management. So long as the user running the application has the required levels of
   access then the application can be written to automatically manage it's own credentials.
+
 [Contents](#toc)
 
 <a name='howitworks'></a>
@@ -46,9 +48,11 @@ Starback system allows you to create roles for users, with just enough access ri
 * (optionally) The Lambda asks the Federation Service (not shown in diagram) for a login url based on the access key
   supplied by the STS (purple).
 * The Lambda returns the access credentials (and the login url) back to the user (green).
+
 [Contents](#toc)
 
 <a name='installation'></a>
 ## Installation ##
 see [INSTALL](INSTALL.md) for full installation and AWS services setup.
+
 [Contents](#toc)
