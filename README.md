@@ -4,14 +4,15 @@ Short-term, Role-based access credentials for AWS.
 > **Note** There is no code here (yet) as I need to ask my employer whether this contravenes my employment contract or
 > not as I wrote a similiar system for them.
 
-- [Features](#Features)
-- [How it Works](#How it Works)
-- [Installation](#Installation)
+- [Features](#features)
+- [How it Works](#howitworks)
+- [Installation](#installation)
 
 
 Rather than managing multiple user credentials for AWS and giving users more access than they actually need the
 Starback system allows you to create roles for users, with just enough access rights for what they need to do.
 
+<a name='features'></a>
 ## Features ##
 * Availability of 99.9% as core components are multi-az and (optionally) mult-region.
 * Lambda and API Gateway based.
@@ -30,6 +31,7 @@ Starback system allows you to create roles for users, with just enough access ri
 * Automatic application access management. So long as the user running the application has the required levels of
   access then the application can be written to automatically manage it's own credentials.
 
+<a name='howitworks'></a>
 ## How it Works ##
 ![Starback Request Flow](starback_request_flow.jpg).
 * A request is sent via the API Gateway (orange lines)
@@ -43,5 +45,6 @@ Starback system allows you to create roles for users, with just enough access ri
   supplied by the STS (purple).
 * The Lambda returns the access credentials (and the login url) back to the user (green).
 
+<a name='installation'></a>
 ## Installation ##
 see [INSTALL](INSTALL.md) for full installation and AWS services setup.
