@@ -1,6 +1,10 @@
 # Starback #
 Short-term, Role-based access credentials for AWS.
 
+> **Note** There is no code here (yet) as I need to ask my employer whether this contravenes my employment contract or
+> not as I wrote a similiar system for them.
+
+
 Rather than managing multiple user credentials for AWS and giving users more access than they actually need the
 Starback system allows you to create roles for users, with just enough access rights for what they need to do.
 
