@@ -1,2 +1,2 @@
-# Starback License #
-Licensed under GPL v3.  See [license.txt](license.txt) for license text.
+# Starback License GPL v3#
+See [license.txt](license.txt) for GPL v3 text.
