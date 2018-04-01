@@ -28,7 +28,13 @@ Starback system allows you to create roles for users, with just enough access ri
 
 ## How It Works ##
 See the diagram [Starback Request Flow](starback_request_flow.jpg).
-* A request is sent via the API Gateway
-* The API GW triggers the Lambda passing in the body parameters (user name, role requested)
+* A request is sent via the API Gateway (orange lines)
+* The API GW triggers the Lambda passing in the body parameters (user name, role requested) (orange)
 * The Lambda, using the long term credentials supplied via the SSM Parameter Store, looks up the user in the DynamoDb
-table.
+  table (purple).
+* The Lambda checks that the user exists, is enabled and is allowed to assume the requested role (purple).
+* The Lambda asks the STS to assume the requested role (purple).
+* The Security Token Service sends back an Access Key ID, a Secret Access Key and a Session Token (purple).
+* (optionally) The Lambda asks the Federation Service (not shown in diagram) for a login url based on the access key
+  supplied by the STS (purple).
+* The Lambda returns the access credentials (and the login url) back to the user (green).
