@@ -27,7 +27,7 @@ Starback system allows you to create roles for users, with just enough access ri
   access then the application can be written to automatically manage it's own credentials.
 
 ## How It Works ##
-See the diagram ![Starback Request Flow](starback_request_flow.jpg).
+![Starback Request Flow](starback_request_flow.jpg).
 * A request is sent via the API Gateway (orange lines)
 * The API GW triggers the Lambda passing in the body parameters (user name, role requested) (orange)
 * The Lambda, using the long term credentials supplied via the SSM Parameter Store, looks up the user in the DynamoDb
