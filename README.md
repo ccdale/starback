@@ -1,9 +1,6 @@
 # Starback #
 Short-term, Role-based access credentials for AWS (**ST**a**RBAC**k).
 
-> **Note** There is no code here (yet) as I need to ask my employer whether this contravenes my employment contract or
-> not as I wrote a similiar system for them.
-
 <a name='toc'></a>
 ## Contents ##
 - [Features](#features)
