@@ -1,3 +1,6 @@
+# Superseded
+This has been developed for Centrica Home Solutions (and open-sourced) as [chaim](https://github.com/ConnectedHomes/chaim)
+
 # Starback #
 Short-term, Role-based access credentials for AWS (**ST**a**RBAC**k).
 
