@@ -1,11 +1,11 @@
 # Superseded
 This has been developed for Centrica Home Solutions (and open-sourced) as [chaim](https://github.com/ConnectedHomes/chaim)
 
-# Starback #
+### Starback ###
 Short-term, Role-based access credentials for AWS (**ST**a**RBAC**k).
 
 <a name='toc'></a>
-## Contents ##
+#### Contents ####
 - [Features](#features)
 - [How it Works](#howitworks)
 - [Installation](#installation)
@@ -15,7 +15,7 @@ Rather than managing multiple user credentials for AWS and giving users more acc
 Starback system allows you to create roles for users, with just enough access rights for what they need to do.
 
 <a name='features'></a>
-## Features ##
+#### Features ####
 * Availability of 99.9% as core components are multi-az and (optionally) mult-region.
 * Lambda and API Gateway based.
 * Generates short term access and secret keys with a session token and (optionally) a federated console login url
@@ -36,7 +36,7 @@ Starback system allows you to create roles for users, with just enough access ri
 [Contents](#toc)
 
 <a name='howitworks'></a>
-## How it Works ##
+#### How it Works ####
 ![Starback Request Flow](starback_request_flow.jpg).
 * A request is sent via the API Gateway (orange lines)
 * The API GW triggers the Lambda passing in the body parameters (user name, role requested) (orange)
@@ -54,7 +54,7 @@ Starback system allows you to create roles for users, with just enough access ri
 [Contents](#toc)
 
 <a name='installation'></a>
-## Installation ##
+#### Installation ####
 see [INSTALL](INSTALL.md) for full installation and AWS services setup.
 
 [Contents](#toc)
